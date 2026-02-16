@@ -2,19 +2,7 @@
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge)](https://github.com/Vikas-devnani/College-Management-system)
 
 
-## Live Project
 
-> **Note:** This project can be deployed to various platforms. Once deployed, update this section with your deployed URL.
-
-### Deploy Frontend to:
-- [Vercel](https://vercel.com) - Recommended for React apps
-- [Netlify](https://www.netlify.com)
-- [GitHub Pages](https://pages.github.com)
-
-### Deploy Backend to:
-- [Railway](https://railway.app)
-- [Render](https://render.com)
-- [Heroku](https://heroku.com)
 
 ## Clone & Run Locally
 
