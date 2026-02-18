@@ -24,3 +24,6 @@ jobs:
 
       - name: Build Project
         run: npm run build
+
+      - name: Build Docker Image
+        run: docker build -t college-management-system .
