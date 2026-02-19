@@ -32,7 +32,7 @@ export default function Home(){
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div onClick={revealAdmin} className="flex items-center gap-2 cursor-pointer">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white font-bold text-lg">CE</div>
-            <div className="font-bold text-xl text-slate-900">StudentBuddy</div>
+            <div className="font-bold text-xl text-slate-900">CollegeBuddy</div>
           </div>
           <div className="flex items-center gap-4">
             <button onClick={()=> goLogin('student')} className="px-4 py-2 text-slate-700 hover:text-slate-900">For Students</button>
