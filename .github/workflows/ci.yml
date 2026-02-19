@@ -38,10 +38,7 @@ jobs:
         run: docker push vikasdevnani/college-management-system:latest
 
       - name: Deploy to EC2 (Restart Kubernetes)
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            sudo kubectl rollout restart deployment college-app
+        run: |
+          echo "${{ secrets.EC2_SSH_KEY_B64 }}" | base64 -d > key.pem
+          chmod 600 key.pem
+          ssh -o StrictHostKeyChecking=no -i key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "sudo kubectl rollout restart deployment college-app"
